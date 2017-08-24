@@ -1,0 +1,41 @@
+
+
+<div class="container" *ngIf="toBoolean(addBoxState)" [@triggerAddBox]="addBoxState">
+
+<form id="addBookForm" #addBookForm="ngForm" class="form-horizontal">
+
+<div class="wrapper ">
+    <div class="input-group col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-4 col-xs-offset-4">
+      <input class="form-control" type="text" id="title" name="title" placeholder="Title"  #title="ngModel" ngModel required>
+      <div *ngIf="(title.touched || title.dirty)">
+        <small *ngIf="bookListService.check4duplicity(bookList,title.value)">
+          title already exists in the list
+        </small>
+      </div>
+    </div>
+
+    <div class="input-group col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-4 col-xs-offset-4">
+      <input class="form-control" type="text" id="author" name="author" placeholder="Author"  ngModel required>
+    </div>
+
+
+    <div class="input-group col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-4 col-xs-offset-4">
+      <input class="form-control" type="text" id="date" name="date" placeholder="Date (dd/mm/yyyy)"
+             pattern="^\d{1,2}(\/|\.)\d{1,2}(\/|\.)\d{4}$" ngModel required>
+    </div>
+
+
+  <div class="input-group col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-4 col-xs-offset-4">
+    <div class="row">
+      <div class="col-xs-6">
+        <input type="button" class="btn btn-primary" [disabled]="!addBookForm.valid" (click)="addBookToList(addBookForm.value)" value="save">
+      </div>
+      <div class="col-xs-6">
+        <input type="button" class="btn btn-default" value="cancel" (click)="closeAddBox()">
+      </div>
+  </div>
+  </div>
+</div>
+</form>
+</div>
+

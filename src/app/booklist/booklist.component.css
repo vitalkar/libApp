@@ -1,0 +1,104 @@
+
+#addBtn{
+  margin-top: 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 2px solid rgb(206,194,197);
+  box-shadow: 0 2px 2px dimgray;
+  background: linear-gradient(rgba(191,196,197,0.9),rgba(12,126,167,0.9));
+  opacity: 0.9;
+  text-align: center;
+}
+
+h2{
+  display: inline-block;
+  margin-left: 5px;
+  color: aliceblue;
+}
+
+h4{
+  color: whitesmoke;
+}
+
+.glyphicon-plus{
+  font-size: 30px;
+  color: whitesmoke;
+  border-color: dimgray;
+}
+
+.glyphicon-plus:hover{
+  /*font-size: 29px;*/
+}
+
+.wrapper {
+  border: 2px solid rgb(206,194,197);
+  border-top: none;
+  box-shadow: 0 2px 2px dimgray;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: linear-gradient(rgba(12,126,167,0.9),rgba(191,196,197,0.9));
+  margin-bottom: 20px;
+
+}
+
+#editBookModal{
+  color: rgba(12,126,167,0.9);
+}
+
+.bookTitle{
+  font-weight: bold;
+  color:rgba(20,0,7,0.77);
+  font-family: Georgia, serif;
+}
+
+ul{
+  margin: 10% 10%;
+  list-style-type: none;
+}
+
+li{
+  border: 1px solid rgba(63,34,4,0.77);
+  margin-right: 10% ;
+  box-shadow: 0 1px 1px #3F1C01;
+}
+
+.well-sm{
+  opacity: 1;
+}
+
+li:hover .glyphicon-pencil{
+  opacity: 0.9;
+
+}
+
+li:hover small{
+  opacity: 0.9;
+}
+
+.details{
+  display: block;
+  font-size: 9px;
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+
+.glyphicon-pencil{
+  float: right;
+  margin-right: 2px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.glyphicon-pencil:hover{
+  text-shadow:0 1px 1px #3F1C01;
+}
+
+.modal-header{
+  background: rgba(115,148,167,0.68);
+}
+
+.modal-footer{
+  background: rgba(115,148,167,0.68);
+}
+
+

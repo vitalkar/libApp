@@ -1,0 +1,19 @@
+#addBookForm{
+  margin-right:30px;
+}
+
+.btn-primary{
+  width: 100%;
+  margin: 0;
+}
+.btn-default{
+  width:100%;
+  margin: 0;
+}
+
+.row{
+  background: lightgray;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 2px;
+}
