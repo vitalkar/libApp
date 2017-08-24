@@ -3,8 +3,15 @@
 h1{
   text-align: center;
   color: aliceblue;
-  text-shadow: rgba(46,110,226,0.58) 2px 2px;
-  letter-spacing: 4px;
+  text-shadow: rgba(46,110,226,0.58) 2px 2px 2px;
+  letter-spacing: 10px;
   font-size: 60px;
   font-weight: 600;
+}
+
+hr{
+  margin: auto 27%;
+  color: aliceblue;
+  box-shadow: rgba(46,110,226,0.58) 1px 1px 1px;
+  opacity: 0.8;
 }
